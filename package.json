@@ -1,0 +1,31 @@
+{
+  "name": "books-app-back-end",
+  "version": "1.0.0",
+  "description": "Bookshelf API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hosnol/books-app-back-end.git"
+  },
+  "keywords": [
+    "books",
+    "Rest",
+    "API"
+  ],
+  "author": "arif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hosnol/books-app-back-end/issues"
+  },
+  "homepage": "https://github.com/Hosnol/books-app-back-end#readme",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
