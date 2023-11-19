@@ -27,7 +27,7 @@ const addBookHandler = (request, h) => {
   ) {
     const response = h.response({
       status: "fail",
-      message: "Gagal menambahkan buku. Mohon isi semua kolom yang diperlukan.",
+      message: "Gagal menambahkan buku. Mohon isi semua kolom yang diperlukan",
     });
     response.code(400);
     return response;
@@ -38,7 +38,7 @@ const addBookHandler = (request, h) => {
     const response = h.response({
       status: "fail",
       message:
-        "Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount.",
+        "Gagal menambahkan buku. readPage tidak boleh lebih besar dari pageCount",
     });
     response.code(400);
     return response;
@@ -71,7 +71,7 @@ const addBookHandler = (request, h) => {
   if (isSuccess) {
     const response = h.response({
       status: "success",
-      message: "Buku berhasil ditambahkan.",
+      message: "Buku berhasil ditambahkan",
       data: {
         bookId: id,
       },
@@ -82,7 +82,7 @@ const addBookHandler = (request, h) => {
 
   const response = h.response({
     status: "fail",
-    message: "Buku gagal ditambahkan.",
+    message: "Buku gagal ditambahkan",
   });
   response.code(500);
   return response;
