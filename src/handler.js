@@ -15,19 +15,10 @@ const addBookHandler = (request, h) => {
   } = request.payload;
 
   // Check if required fields are provided
-  if (
-    !name ||
-    !year ||
-    !author ||
-    !summary ||
-    !publisher ||
-    !pageCount ||
-    !readPage ||
-    reading === undefined
-  ) {
+  if (!name) {
     const response = h.response({
       status: "fail",
-      message: "Gagal menambahkan buku. Mohon isi semua kolom yang diperlukan",
+      message: "Gagal menambahkan buku. Mohon isi nama buku",
     });
     response.code(400);
     return response;
@@ -245,6 +236,7 @@ const deleteBookByIdHandler = (request, h) => {
     message: "Buku gagal dihapus. Id tidak ditemukan",
   });
   response.code(404);
+  return response;
 };
 
 module.exports = {
